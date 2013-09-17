@@ -1,14 +1,21 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    aws_cf_signer (0.1.2)
+    cloudinary (1.0.63)
+      aws_cf_signer
+      rest-client
     diff-lcs (1.2.4)
     json (1.8.0)
+    mime-types (1.25)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -27,6 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cloudinary
   json
   rack-test
   rake

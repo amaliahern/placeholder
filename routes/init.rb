@@ -1,6 +1,6 @@
 # encoding: utf-8
 $LOAD_PATH << 'lib'
-#require 'images'
+#require_relative 'image'
 
 class PlaceHolderApp < Sinatra::Base
 
@@ -11,8 +11,11 @@ class PlaceHolderApp < Sinatra::Base
 	end
 
   get '/resources' do
-    result = Image.get_resources
-    puts result
+     result = Image.get_resources
+     puts result
     return 'done'
   end
+
+  
+
 end
